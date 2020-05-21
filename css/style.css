@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Poppins", "sans-serif";
+  background-color: #222222;
+  color: #ddd;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  background: transparent;
+  border: none; }
+  .nav-btn .nav-line {
+    height: 2px;
+    background-color: white;
+    margin-bottom: 0.5rem; }
+    .nav-btn .nav-line-1 {
+      width: 2rem; }
+    .nav-btn .nav-line-2 {
+      width: 3rem; }
+    .nav-btn .nav-line-3 {
+      width: 1rem; }
+
+.nav-text {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  position: absolute;
+  top: 45%;
+  left: 6.5%;
+  transform: rotate(270deg); }

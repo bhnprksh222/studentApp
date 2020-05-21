@@ -1,0 +1,26 @@
+//! VARIABLES
+$font-primary: 'Poppins', 'sans-serif';
+$color-bg: #222222;
+$color-white: #ddd;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px   10px/16px = 62.5%
+}
+body {
+  font-family: $font-primary;   
+  background-color: $color-bg;   
+  color: $color-white ;
+  font-weight: 300;
+  line-height: 1.6;
+}
+ 
