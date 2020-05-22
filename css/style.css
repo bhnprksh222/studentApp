@@ -106,9 +106,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(12vh);
-  padding-left: 10rem; }
-  .links > li {
+  transform: translateY(10vh);
+  padding-left: 5rem; }
+  .links > li:not(:last-of-type) {
     margin-bottom: 2rem; }
 
 .profile {
@@ -119,18 +119,44 @@ body {
   height: 30vh;
   box-shadow: 0 0.5px 5px #222222; }
   .profile-pic {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     margin-bottom: 2rem;
-    margin-top: 4rem;
-    animation: name duration timing-function delay iteration-count direction fill-mode; }
+    margin-top: 4rem; }
   .profile-name {
     color: #222222;
     text-transform: uppercase;
     font-size: 500;
     letter-spacing: 0.2rem;
     text-align: center; }
+
+.navs {
+  padding: 1rem;
+  background-position-x: left; }
+
+.navs::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+  background-color: #222222; }
+
+.navs:hover::after {
+  width: 100%; }
+
+.navs::before {
+  content: "";
+  position: absolute;
+  background-color: #d9e4e4;
+  z-index: -1;
+  width: 90%;
+  height: 1.5rem;
+  left: 0;
+  top: 6%; }
 
 @keyframes navlinkFade {
   from {
@@ -145,3 +171,15 @@ body {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+
+@keyframes scaleRightX {
+  from {
+    border-bottom: 2px solid #222222;
+    transform: scaleX(0);
+    opacity: 0; }
+  to {
+    border-bottom: 2px solid #222222;
+    transform: scaleX(1);
+    opacity: 1; } }
+
+@keyframes margin {}

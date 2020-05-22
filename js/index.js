@@ -27,6 +27,7 @@ const navSlide = () => {
 
         //Toggle nav
         nav.classList.toggle('nav-active');
+        // burger.classList.toggle('nav-btn-border:after');
 
         //profie pic animation
         if (profilePic.style.animation) {
