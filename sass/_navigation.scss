@@ -1,19 +1,16 @@
 .nav {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    // min-height: 100vh;
     width: 10vw;
     position: absolute; 
-    // left: 5%; 
     width: auto;
-    // background-color: white;
 
     &-btn{
         display: flex;
         flex-direction: column;
         align-items: end;
-        // justify-content: space-around;
         position: absolute;
         top: 50%;
         left: 2vw;
@@ -38,8 +35,6 @@
             }
             &-3{  
                 width: 1rem;
-                // width: 3rem;
-                // transform: rotate(45deg) translateY(-1rem);  
             } 
         }
     }
@@ -51,22 +46,24 @@
         font-weight: 400;   
         position: absolute;
         top: 50%;
-        left: 6.5%;
+        left: 20%;      
         transform: rotate(270deg);
     }
 }
  
 .navlinks{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    padding-left: 10rem; 
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;   
+    // align-items: center; 
+    // padding-left: 10rem; 
     height: 100vh;
     width: 40vh;
-    background-color: rgb(231, 231, 231);
+    // background-color: rgb(231, 231, 231);
+    background: linear-gradient(to right, #ece9e6, #ffffff);
     transform: translateX(-100%);
     transition: all 0.5s ease;  
+    z-index: 3;
 }
 
 .navlinks a { 
@@ -87,7 +84,7 @@
 }
 
 .toggle .nav-line-1{
-    transform: rotate(-45deg) translate(-5px,0.5em);
+    transform: rotate(-45deg) translate(-0.5rem,0.5rem);
     width: 3rem;
     background-color: $color-bg;
 }
@@ -95,7 +92,7 @@
     opacity: 0;
 }
 .toggle .nav-line-3{
-    transform: rotate(45deg) translate(-5px,-0.5rem);
+    transform: rotate(45deg) translate(-0.5rem,-0.5rem);
     width: 3rem;
     background-color: $color-bg;
 }
@@ -113,4 +110,41 @@
 
 .nav-btn  > div { 
     width: 3rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    transform: translateY(12vh);
+    padding-left: 10rem;
+
+    & > li {
+        margin-bottom: 2rem;
+    }
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background: linear-gradient(to right, #d9e4e4, #e5f1fa);
+    height: 30vh; 
+    box-shadow: 0 0.5px 5px $color-bg; 
+
+    &-pic{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        margin-top: 4rem; 
+    }
+
+    &-name {
+        color: $color-bg;
+        text-transform: uppercase;
+        font-size: 500;
+        letter-spacing: 0.2rem;
+        text-align: center; 
+    }
 }
