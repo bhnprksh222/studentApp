@@ -119,11 +119,12 @@ body {
   height: 30vh;
   box-shadow: 0 0.5px 5px #222222; }
   .profile-pic {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     margin-bottom: 2rem;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    animation: name duration timing-function delay iteration-count direction fill-mode; }
   .profile-name {
     color: #222222;
     text-transform: uppercase;
@@ -138,3 +139,9 @@ body {
   to {
     opacity: 1;
     transform: translateX(0px); } }
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }

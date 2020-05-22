@@ -133,11 +133,12 @@
     box-shadow: 0 0.5px 5px $color-bg; 
 
     &-pic{
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
         margin-bottom: 2rem;
-        margin-top: 4rem; 
+        margin-top: 4rem;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 
     &-name {

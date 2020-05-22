@@ -8,3 +8,13 @@
       transform: translateX(0px);
     }
   }
+
+@keyframes zoomIn {
+  from{
+    transform: scale(0);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}
