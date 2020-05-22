@@ -7,27 +7,10 @@ const navSlide = () => {
     const nav3 = document.querySelector('.nav-line-3');
     const profilePic = document.querySelector('.profile-pic');
 
-    // burger.addEventListener('mouseenter', () => {
-    //     nav1.style.width = '3rem';
-    //     nav3.style.width = '3rem';
-    // burger.addEventListener('click', () => {
-    //     nav1.style.width = '3rem';
-    //     nav2.style.width = '3rem';
-    //     nav3.style.width = '3rem';
-    // });
-    // });
-
-    // burger.addEventListener('mouseleave', () => {
-    //     nav1.style.width = '2rem';
-    //     nav2.style.width = '3rem';
-    //     nav3.style.width = '1rem';
-    // });
-
     burger.addEventListener('click', () => {
 
         //Toggle nav
         nav.classList.toggle('nav-active');
-        // burger.classList.toggle('nav-btn-border:after');
 
         //profie pic animation
         if (profilePic.style.animation) {
