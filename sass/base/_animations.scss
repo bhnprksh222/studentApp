@@ -18,21 +18,3 @@
     transform: scale(1);
   }
 }
-
-@keyframes scaleRightX{
-  from{
-    border-bottom: 2px solid $color-bg;
-    transform: scaleX(0);
-    opacity: 0;
-  }
-
-  to{
-    border-bottom: 2px solid $color-bg;
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-
-@keyframes margin{
-  
-}

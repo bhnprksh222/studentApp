@@ -1,6 +1,6 @@
-@import "./base"; 
-@import "./header";  
-@import "./variables";
-@import "./navigation";  
-@import "./animations";           
-      
+@import "./base/base"; 
+@import "./layout/header";  
+@import "./base/variables";
+@import "./base/navigation";  
+@import "./base/animations";
+@import "./pages/attendence";     
